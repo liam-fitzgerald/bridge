@@ -25,9 +25,9 @@ export default function Button({
   return (
     <Grid
       as={As}
-      gap={1}
+      gap={2}
       className={cn(
-        'pointer pv4 truncate flex-row justify-between',
+        'pointer pv3 truncate flex-row justify-between bt1 bp1 b-gray2',
         {
           p4: solid,
         },

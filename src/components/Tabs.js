@@ -14,14 +14,14 @@ export default function Tabs({
 
   return (
     <Grid className={className}>
-      <Grid.Item full as={Flex} wrap className="b-gray3 bb1">
+      <Grid.Item full as={Flex} wrap className="b-gray2 bb1">
         {options.map(option => {
           const isActive = option.value === currentTab;
           return (
             <Flex.Item
               key={option.value}
               onClick={() => onTabChange(option.value)}
-              className={cn('f5 pv3 mr6 clickable', {
+              className={cn('f6 pv3 mr6 clickable', {
                 'black b-black bb1': isActive,
                 gray3: !isActive,
               })}

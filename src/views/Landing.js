@@ -20,21 +20,18 @@ function Landing() {
       </P>
 
       <ForwardButton
-        className="mt3"
         detail="If you were sent an Azimuth invite code."
         onClick={() => history.push(ROUTE_NAMES.ACTIVATE)}>
-        Activate a Point
+        <P className="f5 mv0">Activate a Point</P>
       </ForwardButton>
 
       <ForwardButton
-        className="mt3"
         detail="Login to an activated point."
         onClick={() => history.push(ROUTE_NAMES.LOGIN)}>
         Login
       </ForwardButton>
 
       <ForwardButton
-        className="mt3"
         detail="View an Azimuth point without signing into a wallet."
         onClick={() => history.push(ROUTE_NAMES.VIEW_POINT)}>
         View a Point

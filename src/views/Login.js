@@ -132,11 +132,9 @@ export default function Login() {
 
       <Footer>
         <Grid>
-          <Grid.Divider />
           <Grid.Item full as={ForwardButton} onClick={goToActivate}>
             Activate
           </Grid.Item>
-          <Grid.Divider />
           <Grid.Item full as={OfflineButton} />
         </Grid>
       </Footer>
