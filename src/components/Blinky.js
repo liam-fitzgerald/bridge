@@ -3,8 +3,8 @@ import React, { useState, useRef } from 'react';
 import useInterval from 'lib/useInterval';
 
 // TODO: make these characters display as the same width
-export const LOADING_CHARACTER = '▓';
-export const INTERSTITIAL_CHARACTER = '░';
+export const LOADING_CHARACTER = '█';
+export const INTERSTITIAL_CHARACTER = '▓';
 const BLINK_AFTER_MS = 2500; // ms
 
 export const matchBlinky = obj =>
