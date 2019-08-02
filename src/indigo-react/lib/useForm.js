@@ -200,12 +200,7 @@ export default function useForm(inputConfigs = []) {
     () =>
       configs.map(
         ({ name, error, autoFocus, disabled, initialValue, ...rest }, i) => {
-          const value =
-            datas[i] !== undefined
-              ? datas[i]
-              : initialValue !== undefined
-              ? initialValue
-              : '';
+          const value = values[name];
           return {
             // Input props
             name,
@@ -235,6 +230,7 @@ export default function useForm(inputConfigs = []) {
       ),
     [
       configs,
+      values,
       datas,
       passes,
       syncPasses,
